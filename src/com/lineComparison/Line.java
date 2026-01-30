@@ -16,4 +16,20 @@ public class Line {
         return Math.sqrt(Math.pow(xDifference, 2) + Math.pow(yDifference, 2));
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Line otherLine = (Line) obj;
+
+        return this.calculateLength() == otherLine.calculateLength();
+    }
+
 }
