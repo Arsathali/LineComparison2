@@ -12,6 +12,15 @@ public class LineComparisonMain {
         } else {
             System.out.println("Lines are Not Equal");
         }
+
+        int result = l1.compareTo(l2);
+
+        if (result > 0)
+            System.out.println("Line1 is Greater");
+        else if (result < 0)
+            System.out.println("Line1 is Smaller");
+        else
+            System.out.println("Lines are Equal");
     }
 
     
